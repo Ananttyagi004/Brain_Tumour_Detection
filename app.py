@@ -6,7 +6,6 @@ import keras
 from PIL import Image,ImageOps
 import numpy as np
 from keras_preprocessing.image import load_img,img_to_array
-import cv2
 import numpy as np
 import os 
 import h5py
