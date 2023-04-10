@@ -1,6 +1,6 @@
 
 import streamlit as st
-import tensorflow as tf
+# import tensorflow as tf
 import tensorflow_hub as hub
 import keras
 from PIL import Image,ImageOps
@@ -43,8 +43,8 @@ def predict_class(image):
 
    return predictions
 
-if __name__=="__main__":
-   main()
+# if __name__=="__main__":
+#    main()
    
     
    
