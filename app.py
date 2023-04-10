@@ -5,7 +5,7 @@ import tensorflow_hub as hub
 import keras
 from PIL import Image,ImageOps
 import numpy as np
-from keras_preprocessing.image import load_img,img_to_array
+# from keras_preprocessing.image import load_img,img_to_array
 import numpy as np
 
 
@@ -26,7 +26,7 @@ def predict_class(image):
    shape=((224,224,3))
    
    test_image=image.resize((224,224))
-   test_image=img_to_array(test_image)
+   test_image=keras.preprocessing.image.img_to_array(test_image)
    test_image=test_image/255.0
    test_image=np.expand_dims(test_image,axis=0)
    class_names=['Brain Tumour','Healthy']
