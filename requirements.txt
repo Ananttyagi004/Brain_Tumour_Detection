@@ -3,8 +3,4 @@ tensorflow
 tensorflow_hub 
 keras
 numpy 
-cv2
-numpy 
-os 
-h5py
 matplotlib.pyplot 
