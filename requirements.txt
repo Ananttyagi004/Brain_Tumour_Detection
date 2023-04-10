@@ -3,7 +3,6 @@ tensorflow
 tensorflow_hub 
 keras
 numpy 
-keras_preprocessing.image 
 cv2
 numpy 
 os 
