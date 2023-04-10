@@ -2,3 +2,5 @@ streamlit
 keras_preprocessing
 keras
 numpy 
+tensorflow.compat.v2
+keras.engine.functional
