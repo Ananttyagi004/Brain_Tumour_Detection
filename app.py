@@ -7,7 +7,7 @@ from PIL import Image,ImageOps
 import numpy as np
 from keras_preprocessing.image import load_img,img_to_array
 import numpy as np
-import matplotlib.pyplot as plt
+
 
 st.header("Brain Tumour Prediction")
 
@@ -15,12 +15,11 @@ def main():
    file= st.file_uploader('Choose the file',type=['jpg','png','jpeg'])
    if file is not None:
       image=Image.open(file)
-      figure=plt.figure(figsize=(4,4))
-      plt.imshow(image)
-      plt.axis('off')
       result=predict_class(image)
       st.write(result)
-      st.pyplot(figure)
+      st.image (image, caption=None, width=None, use_column_width=None, clamp=False, channels='RGB', output_format='auto')
+      
+      
 
 def predict_class(image):
    model=keras.models.load_model('bestmodel.h5')

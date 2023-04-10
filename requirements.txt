@@ -3,4 +3,3 @@ tensorflow
 tensorflow_hub 
 keras
 numpy 
-matplotlib.pyplot 
