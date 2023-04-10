@@ -1,8 +1,7 @@
 streamlit 
 tensorflow 
 tensorflow_hub 
- keras
-PIL
+keras
 numpy 
 keras_preprocessing.image 
 cv2
