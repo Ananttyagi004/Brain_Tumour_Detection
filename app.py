@@ -3,10 +3,13 @@ import streamlit as st
 # import tensorflow as tf
 # import tensorflow_hub as hub
 import keras
+from keras import models
 import keras_preprocessing
 from keras_preprocessing.image import img_to_array
 from PIL import Image,ImageOps
 import numpy as np
+from keras.engine.functional import Functional
+import tensorflow.compat.v2 as tf
 # from keras_preprocessing.image import load_img,img_to_array
 import numpy as np
 
@@ -24,7 +27,7 @@ def main():
       
 
 def predict_class(image):
-   model=keras.models.load_model('bestmodel.h5')
+   model=models.load_model('bestmodel.h5')
    shape=((224,224,3))
    
    test_image=image.resize((224,224))
