@@ -3,7 +3,7 @@ import streamlit as st
 # import tensorflow as tf
 # import tensorflow_hub as hub
 import keras
-
+from keras.models import load_model
 import keras_preprocessing
 from keras_preprocessing.image import img_to_array
 from PIL import Image,ImageOps
@@ -26,7 +26,7 @@ def main():
       
 
 def predict_class(image):
-   model=keras.models.load_model('bestmodel.h5')
+   model=load_model('bestmodel.h5')
    shape=((224,224,3))
    
    test_image=image.resize((224,224))
@@ -44,8 +44,8 @@ def predict_class(image):
 
    return predictions
 
-# if __name__=="__main__":
-#    main()
+if __name__=="__main__":
+   main()
    
     
    
